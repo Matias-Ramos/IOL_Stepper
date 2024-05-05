@@ -37,9 +37,16 @@ By using this component:
 The base documentation to create this component can be found [here](https://ishadeed.com/article/stepper-component-html-css/), although later on responsiveness adaptation, css code optimization and custom stylings were implemented by me.
 
 
-## How to use
+## How to implement this on your project
 
-Fastest way to use this component is to copy and paste the HTML/CSS code as needed.
+The fastest way to implement this component is to copy and paste the HTML/CSS code as needed.
+
+
+## How to clone & run this component
+
+1. git clone https://github.com/Matias-Ramos/IOL_Stepper.git
+2. double click on _index.html_.
+3. Change the files as needed and refresh the browser to see the changes.
 
 
 ## Contact

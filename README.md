@@ -29,7 +29,9 @@ By using this component:
 
 3. This component is vanilla html/css, so no external libraries are required and may be implemented with any framework.
 
-4. CSS BEM naming convention has been used on this component. Although IOL doesn't use it, I found that this would facilitate their adaptation.
+4. Improves SEO and Accessibility.
+
+5. CSS BEM naming convention has been used on this component. Although IOL doesn't use it, I found that this would facilitate their adaptation.
 
 
 ## Component's logic

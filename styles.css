@@ -1,0 +1,134 @@
+/*************************** */
+/* Styles on every viewport */
+
+.c-stepper {
+    display: flex;
+    flex-wrap: wrap;
+    --size: 3rem;
+    padding: 0;
+}
+
+.c-stepper__title {
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.c-stepper__item {
+    display: flex;
+}
+
+.c-stepper__desc {
+    margin: 0px;
+}
+
+.c-stepper__item:before {
+    background-color: #e0e0e0;
+    --size: 3rem;
+    position: relative;
+    z-index: 1;
+    height: var(--size);
+    line-height: var(--size);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.c-stepper__item-clock:before {
+    background-image: url("clock.svg"); /* img source: https://www.svgrepo.com/svg/524426/clock-circle */
+    background-size: 75% 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.c-stepper__item-ars:before {
+    background-color: #2c1c86;
+    content: "AR$";
+}
+
+.c-stepper__item-usd:before {
+    content: "US$";
+}
+
+.c-stepper__item:not(:last-child):after {
+    content: "";
+    background-color: #e0e0e0;
+}
+
+/************** */
+/* MOBILE ONLY */
+
+@media only screen and (max-width: 991px) {
+
+    .c-stepper {
+        --spacing: 0.5rem;
+    }
+
+    .c-stepper__item {
+        position: relative;
+        gap: 1rem;
+        padding-bottom: 4rem;
+    }
+
+    .c-stepper__desc{
+        max-width: 80%;
+    }
+
+    .c-stepper__item:before {
+        flex: 0 0 var(--size);
+        text-align: center;
+    }
+
+    .c-stepper__item:not(:last-child):after {
+        position: absolute;
+        left: 0;
+        width: 2px;
+        top: calc(var(--size) + var(--spacing));
+        bottom: var(--spacing);
+        transform: translateX(calc(var(--size) / 2));
+    }
+}
+
+/*************** */
+/* DESKTOP ONLY */
+
+@media only screen and (min-width: 992px) {
+
+    .c-stepper {
+        --spacing: 2rem;
+    }
+
+    .c-stepper__title {
+        margin-top: 1rem;
+    }
+
+    .c-stepper__item {
+        flex: 1;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .c-stepper p {
+        margin-top: 0;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .c-stepper__item:before {
+        display: block;
+        width: var(--size);
+        margin: 1rem auto 0;
+    }
+
+    .c-stepper__item:not(:last-child):after {
+        position: relative;
+        top: 40px;
+        height: 2px;
+        order: -1;
+        width: calc(100% - var(--size) - calc(var(--spacing) * 2));
+        left: calc(50% + calc(var(--size) / 2 + var(--spacing)));
+    }
+}

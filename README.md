@@ -37,6 +37,11 @@ By using this component:
 The base documentation to create this component can be found [here](https://ishadeed.com/article/stepper-component-html-css/), although later on responsiveness adaptation, css code optimization and custom stylings were implemented by me.
 
 
+## How to use
+
+Fastest way to use this component is to copy and paste the HTML/CSS code as needed.
+
+
 ## Contact
 
 [Matias Ramos](https://www.linkedin.com/in/matias-ramos-computacion/)

@@ -25,7 +25,7 @@ By using this component:
 
 1. The static image is optimized, therefore the resolution is reduced and the image, blurry. Using a component will render crystal clear content.
 
-2. A small HTML & CSS component like this is more performant than the image, thereby reducing costs and increasing rendering times.
+2. A small HTML & CSS component like this is more performant than the image, thereby reducing costs and rendering times.
 
 3. This component is vanilla html/css, so no external libraries are required and may be implemented with any framework.
 
